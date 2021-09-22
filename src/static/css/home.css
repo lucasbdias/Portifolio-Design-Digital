@@ -1,0 +1,74 @@
+.informations-description {
+  padding-left: 10rem;
+}
+
+.informations-description p {
+  text-align: right;
+}
+
+.socials {
+  list-style-type: none;
+}
+
+.socials li a {
+  font-size: 2.5rem;
+  color: var(--dark-gray)
+}
+
+.socials li a:hover {
+  color: var(--light-gray)
+}
+
+.profile-image-wrapper {
+  position: relative;
+
+  margin-left: 5rem;
+}
+
+.profile-image-wrapper div:first-child {
+  width: 331px;
+  height: 450px;
+
+  border: 2px solid #fff;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  width: 331px;
+  height: 450px;
+
+  background-image: url('../assets/images/profile_desktop.jpg');
+}
+
+@media (max-width: 450px) { 
+  .informations-container {
+    flex-direction: column !important;
+  }
+
+  .profile-image-wrapper div:first-child {
+    position: absolute;
+    top: 0;
+    left: -4rem;
+
+    width: 280px;
+    height: 380px;
+  }
+
+  .profile-picture {
+    top: 2rem;
+    right: 0;
+    left: -2rem;
+    
+    width: 280px;
+    height: 380px;
+
+    background-image: url('../assets/images/profile_mobile.jpg');
+  }
+
+  .informations-description {
+    padding-left: 2rem;
+  }
+}
