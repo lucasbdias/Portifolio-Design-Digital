@@ -1,0 +1,57 @@
+.experience-item i {
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.company-logo-wrapper {
+  position: relative;
+}
+
+.company-logo-wrapper div {
+  width: 331px;
+  height: 450px;
+  
+  border: 2px solid #fff;
+}
+
+.company-logo-wrapper img {
+  position: absolute;
+  top: 45%;
+  left: -4rem;
+
+  width: 13rem;
+}
+
+.experience-description {
+  padding-right: 3rem;
+}
+
+.experience-description h3 {
+  text-align: right;
+}
+
+@media (max-width: 450px) { 
+  .experience-item .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .company-logo-wrapper div {
+    width: 280px;
+    height: 380px;
+  }
+
+  .company-logo-wrapper img {
+    left: -2rem;
+  }
+
+  .experience-description h3 {
+    text-align: left;
+  }
+
+  .experience-description {
+    margin-top: 2rem;
+    margin-left: 0 !important;
+    padding-right: 0;
+  }
+}

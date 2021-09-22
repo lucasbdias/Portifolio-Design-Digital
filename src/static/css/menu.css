@@ -1,0 +1,11 @@
+.nav-menu ul li:hover > a {
+  color: var(--light-gray) !important;
+}
+
+.navbar-brand img {
+  width: 3.5rem !important;
+}
+
+.active {
+  font-weight: bold !important;
+}

@@ -1,0 +1,65 @@
+.project-item {
+  position: relative;
+}
+
+.project-images {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.project-item div:first-child {
+  width: 450px;
+  height: 298px;
+
+  border: 2px solid #fff;
+}
+
+#project-image-1 {
+  width: 450px;
+  height: 298px;
+
+  background-image: url('../assets/images/projects_desktop.jpg');
+}
+
+.project-description {
+  position: absolute;
+  top: 40%;
+  left: 42.5%;
+
+  padding: 0 10rem 0 2rem;
+  z-index: 1;
+
+  background: var(--background);
+}
+
+@media (max-width: 450px) { 
+  .project-item div:first-child {
+    width: 310px;
+    height: 205px;
+  }
+  
+  #project-image-1 {
+    width: 310px;
+    height: 205px;
+  
+    background-image: url('../assets/images/projects_mobile.jpg');
+  }
+
+  .project-description {
+    top: 52.5%;
+    left: 15%;
+
+    padding: 2.5rem 0 0 0;
+  }
+
+  .project-description h3 {
+    margin-bottom: 1rem;
+
+    text-align: center;
+  }
+
+  .project-description p {
+    text-align: left;
+  }
+}
