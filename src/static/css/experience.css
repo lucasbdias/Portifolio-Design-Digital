@@ -1,6 +1,10 @@
-.experience-item i {
-  color: var(--dark-gray);
-  text-align: center;
+.experience-item hr {
+  margin-top: 30px;
+
+  width: 50%;
+  height: 2px;
+
+  background-color: var(--primary-text-color);
 }
 
 .company-logo-wrapper {
