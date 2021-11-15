@@ -40,4 +40,4 @@ Desenvolvimento de um sistema para Internet que sirva como uma página pessoal o
 
 
 ## Link para o vídeo no youtube
-[Vídeo explicativo no canal do YouTube](https://www.youtube.com/watch?v=dNyMI2Xg6-Q)
+[Vídeo explicativo no canal do YouTube](https://youtu.be/VStRj76jTow)
