@@ -15,11 +15,29 @@
   border: 2px solid #fff;
 }
 
+.spacer {
+  height: 3rem;
+}
+
 #project-image-1 {
   width: 450px;
   height: 298px;
 
-  background-image: url('../assets/images/projects_desktop.jpg');
+  background-image: url('../assets/images/tcc_infonet.jpg');
+}
+
+#project-image-2 {
+  width: 450px;
+  height: 298px;
+
+  background-image: url('../assets/images/tcc_ds.jpg');
+}
+
+#project-image-3 {
+  width: 450px;
+  height: 298px;
+
+  background-image: url('../assets/images/api_fatec.jpg');
 }
 
 .project-description {
@@ -43,12 +61,26 @@
     width: 310px;
     height: 205px;
   
-    background-image: url('../assets/images/projects_mobile.jpg');
+    background-image: url('../assets/images/tcc_infonet_mobile.jpg');
+  }
+
+  #project-image-2 {
+    width: 310px;
+    height: 205px;
+  
+    background-image: url('../assets/images/tcc_ds_mobile.jpg');
+  }
+
+  #project-image-3 {
+    width: 310px;
+    height: 205px;
+  
+    background-image: url('../assets/images/api_fatec_mobile.jpg');
   }
 
   .project-description {
-    top: 52.5%;
-    left: 15%;
+    top: 92.5%;
+    left: 10%;
 
     padding: 2.5rem 0 0 0;
   }
@@ -61,5 +93,9 @@
 
   .project-description p {
     text-align: left;
+  }
+
+  .spacer {
+    height: 10rem;
   }
 }
