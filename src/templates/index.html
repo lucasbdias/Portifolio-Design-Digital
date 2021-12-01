@@ -1,71 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Icones FontAwesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-  <!-- CSS Global -->
-  <link rel="stylesheet" href="../static/css/globals.css">
-  <!-- CSS menu -->
-  <link rel="stylesheet" href="../static/css/menu.css">
-  <!-- CSS local -->
+{% extends "base.html" %}
+{% block customHead %}
   <link rel="stylesheet" href="../static/css/home.css">
 
   <title>Home</title>
-</head>
-<body>
-  <nav class="container-fluid d-flex align-items-center mt-4 nav-menu">
-    <a class="navbar-brand ms-5" href="#">
-      <img src="../static/assets/svg/lbd_logo.svg" alt="Logo">
-    </a>
-      <ul class="navbar-nav d-flex flex-row">
-        <li class="nav-item me-4">
-          <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item me-4">
-          <a class="nav-link text-white" href="./experience.html">Experiência</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="./projects.html">Projetos</a>
-        </li>
-      </ul>
-  </nav>
+{% endblock %}
+{% block content %}
   <div class="container">
     <div class="informations-container d-flex">
       <div class="informations-description">
         <h3>
-          Lucas Braz Dias
+          {{data["title"]}}
         </h3>
-        <p>
-          Meu nome é Lucas, tenho dezenove anos,
-          atualmente estou cursando o curso de
-          Desenvolvimento de Software Multiplataforma
-          pela Fatec de São José dos Campos.
-          Tenho dois técnicos na área de TI
-          e atualmente sou Desenvolvedor FullStack
-        </p>
+        <p>{{data["textContent"]}}</p>
         <ul class="socials d-flex justify-content-end">
           <li class="me-2">
-            <a href="https://github.com/lucasbdias" target="_blank">
+            <a href="{{data['socialLinks']['github']}}" target="_blank">
               <i class="fab fa-github"></i>
             </a>
           </li>
           <li class="me-2">
-            <a href="https://www.linkedin.com/in/lucas-braz-dias/" target="_blank">
+            <a href="{{data['socialLinks']['linkedin']}}" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
           <li class="me-2">
-            <a href="mailto:lucasbrzdias@gmail.com" target="_blank">
+            <a href="{{data['socialLinks']['email']}}" target="_blank">
               <i class="far fa-envelope"></i>
             </a>
           </li>
@@ -77,5 +36,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+{% endblock %}
