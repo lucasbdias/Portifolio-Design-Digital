@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-from data import homeData, experienceData, experienceData
+from .data import homeData, experienceData, experienceData
 
 app = Flask(__name__)
 
