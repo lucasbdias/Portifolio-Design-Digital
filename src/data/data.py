@@ -43,3 +43,27 @@ experienceData = {
     "imageUrl": "assets/svg/real.svg"
   }
 }
+
+projectsData = {
+  "0": {
+    "title": "TCC Informática para Internet",
+    "textContent": "Site desenvolvido para uma empresa de impressoras 3D. Foi\
+      desenvolvido um site responsivo com uma dashboard capaz\
+      de ver as informações do gráfico e editar informações do site."
+  },
+  "1": {
+    "title": "TCC Desenvolvimento de Sistemas",
+    "textContent": "Site desenvolvido para uma empresa de\
+      impressoras 3D. Foi desenvolvido um site\
+      responsivo com uma dashboard capaz\
+      de ver as informações do gráfico e editar\
+      informações do site."
+  },
+  "2": {
+    "title": "API Infatec Fatec SJC",
+    "textContent": "Projeto que está sendo desenvolvido para a fatec São José dos Campos.\
+      Um portal  de  informações,  para docentes e discentes, capaz de\
+      exibir de forma seletiva e controlada os avisos gerais ou específicos\
+      para seus cursos (ex. Divulgação de editais, cursos de extensão, etc.)."
+  }
+}
