@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-from .data import homeData
+from .data import homeData, experienceData
 
 app = Flask(__name__)
 
@@ -10,7 +10,9 @@ def home():
 
 @app.route('/experience')
 def experience():
-  return render_template('experience.html')
+  for index in experienceData:
+    print(experienceData[index])
+  return render_template('experience.html', data = experienceData)
 
 @app.route('/projects')
 def projects():
