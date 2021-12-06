@@ -2,16 +2,25 @@
   position: relative;
 }
 
-.project-images {
+.project-images-shared-position {
   position: absolute;
   top: 2rem;
+}
+
+.project-images-left {
   left: 2rem;
 }
 
-.project-item div:first-child {
+.project-images-right {
+  right: 2rem;
+}
+
+.project-item-dimensions {
   width: 450px;
   height: 298px;
+}
 
+.project-item div:first-child {
   border: 2px solid #fff;
 }
 
@@ -20,30 +29,20 @@
 }
 
 #project-image-1 {
-  width: 450px;
-  height: 298px;
-
   background-image: url('../assets/images/tcc_infonet.jpg');
 }
 
 #project-image-2 {
-  width: 450px;
-  height: 298px;
-
   background-image: url('../assets/images/tcc_ds.jpg');
 }
 
 #project-image-3 {
-  width: 450px;
-  height: 298px;
-
   background-image: url('../assets/images/api_fatec.jpg');
 }
 
-.project-description {
+.project-description-global {
   position: absolute;
   top: 40%;
-  left: 42.5%;
 
   padding: 0 10rem 0 2rem;
   z-index: 1;
@@ -51,51 +50,66 @@
   background: var(--background);
 }
 
-@media (max-width: 450px) { 
-  .project-item div:first-child {
-    width: 310px;
-    height: 205px;
+.project-description-left {
+  left: 42.5%;
+}
+
+.project-description-right {
+  right: 42.5%;
+}
+
+@media (max-width: 450px) {
+  .project-images-shared-position {
+    top: 1rem;
+  }
+
+  .project-images-left  {
+    left: 1rem;
+  }
+
+  .project-images-right  {
+    right: 1rem;
+  }
+
+  .project-item-dimensions {
+    width: 290px;
+    height: 192px;
   }
   
   #project-image-1 {
-    width: 310px;
-    height: 205px;
-  
     background-image: url('../assets/images/tcc_infonet_mobile.jpg');
   }
 
   #project-image-2 {
-    width: 310px;
-    height: 205px;
-  
     background-image: url('../assets/images/tcc_ds_mobile.jpg');
   }
 
   #project-image-3 {
-    width: 310px;
-    height: 205px;
-  
     background-image: url('../assets/images/api_fatec_mobile.jpg');
   }
 
-  .project-description {
+  .project-description-global {
     top: 92.5%;
-    left: 10%;
+    left: 7%;
 
-    padding: 2.5rem 0 0 0;
+    padding: 1.5rem 0 0 0;
   }
 
-  .project-description h3 {
+  .project-description-right {
+    right: 7%;
+  }
+
+  .project-description-global h3 {
     margin-bottom: 1rem;
 
     text-align: center;
   }
 
-  .project-description p {
+  .project-description-global p {
     text-align: left;
   }
 
   .spacer {
-    height: 10rem;
+    height: 15rem;
   }
 }

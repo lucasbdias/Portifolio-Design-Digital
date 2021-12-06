@@ -1,67 +1,27 @@
 {% extends "base.html" %}
 {% block customHead %}
-  <link rel="stylesheet" href="../static/css/experience.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/experience.css')}}">
 
   <title>Experiência</title>
 {% endblock %}
 {% block content %}
   <div class="container mt-4">
     <div class="experiences-container">
-      <div class="experience-item d-flex flex-column align-items-center">
-        <div class="d-flex">
-          <div class="company-logo-wrapper">
-            <div></div>
-            <img src="../static/assets/svg/iclouds.svg" alt="Logo">
+      {% for index in data %}
+        <div class="experience-item d-flex flex-column align-items-center">
+          <div class="d-flex">
+            <div class="company-logo-wrapper">
+              <div></div>
+              <img src="{{url_for('static', filename=data[index]['imageUrl'])}}" alt="Logo">
+            </div>
+            <div class="experience-description ms-5">
+              <h3>{{ data[index]['title'] }}</h3>
+              <p>{{ data[index]['textContent'] }}</p>
+            </div>
           </div>
-          <div class="experience-description ms-5">
-            <h3>iClouds Sistemas Web</h3>
-            <p>
-              Empresa na qual trabalho atualmente como
-              Desenvolvedor Fullstack. Comecei como
-              estagiário há quase um ano e recentemente
-              fui promovido. Trabalho com a stack React, React Native e NodeJS. Tambḿe utilizo typecript no dia dia. Foi a minha experiencia que pude crescer mais pessoalmente e profissionalmente até o momento, venho me descobrindo como profissional.
-            </p>
-          </div>
+          <hr />
         </div>
-        <hr />
-      </div>
-      <div class="experience-item d-flex flex-column align-items-center mt-3">
-        <div class="d-flex">
-          <div class="company-logo-wrapper">
-            <div></div>
-            <img src="../static/assets/svg/mkt.svg" alt="Logo">
-          </div>
-          <div class="experience-description ms-5">
-            <h3>Makertech Labs</h3>
-            <p>
-              Trabalhei como estagiário. Dava suporte ao e-commerce da empresa,
-              gestão dos anúncios no Google ADS e Facebook ADS, criação de logotipos,
-              artes para midias sociais e e-commerce.
-              Desenvolvimento de uma visão mais critica em relação a design e visão 
-              de marketing para divulgação de um e-commerce.
-            </p>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div class="experience-item d-flex flex-column align-items-center mt-3">
-        <div class="d-flex">
-          <div class="company-logo-wrapper">
-            <div></div>
-            <img src="../static/assets/svg/real.svg" alt="Logo">
-          </div>
-          <div class="experience-description ms-5">
-            <h3>Supermercado Real</h3>
-            <p>
-              Trabalhei como aprendiz auxiliar de escritório, dava suporte nas tarefas
-              administrativas, atualização de informações do sistema de gerenciamento
-              do mercado criação de comunicados e controle de trocas de produtos.
-              Desenvolvimento de habilidades organizacionais e comunicativas. 
-            </p>
-          </div>
-        </div>
-        <hr />
-      </div>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
