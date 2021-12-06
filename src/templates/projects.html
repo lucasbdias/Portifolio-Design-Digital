@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block customHead %}
   <!-- CSS local -->
-  <link rel="stylesheet" href="../static/css/projects.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/projects.css')}}">
 
   <title>Home</title>
 {% endblock %}
